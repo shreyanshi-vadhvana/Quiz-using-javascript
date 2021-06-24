@@ -1,11 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
 body{
+    font-size: 30px;
     background-color:#CEEDEF;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Work Sans', 'sans-serif';
 }
 
 h1{
@@ -17,11 +20,11 @@ h1{
 }
 
 .container{
-   position: relative;
-   height: 200px;
-   margin-top: 50px;
-}
-
+    position: relative;
+    height: 200px;
+    margin-top: 50px;
+ }
+ 
 .question{
     font-size: 40px;
     margin-bottom: 10px;
@@ -44,6 +47,7 @@ button{
     padding: 13px;
     cursor: pointer;
     margin-bottom: 20px;
+    border-color: black;
     border-radius: 4px;
     border:0px;
 }

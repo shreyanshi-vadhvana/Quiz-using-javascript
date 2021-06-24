@@ -54,7 +54,7 @@
             Questions.forEach((currentQuestion, questionNo) => {
                 const answers= [];
 
-                for(letter in currentQuestion.answers)(
+                for(letter in currentQuestion.answers){
                     answers.push(
                         `<label id="${questionNo}${letter}" href="#">
                             <input type="radio" name="question${questionNo}" value="${letter}" id="${question}"></input>               
@@ -63,7 +63,7 @@
                         </label>`
                     );
                 }
-
+                
                 output.push(
                     `<div class="slide">
                         <div class="question">${currentQuestion.question} </div>
@@ -104,7 +104,7 @@
 
             });
 
-            resultsconatiner.innerHTML=`${numCorrect} / ${Questions.length}`;
+            resultscontainer.innerHTML=`${numCorrect} / ${Questions.length}`;
         }
 
         function showSlide(n){
