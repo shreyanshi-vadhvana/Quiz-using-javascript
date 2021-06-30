@@ -1,43 +1,48 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
-
 body{
     font-size: 30px;
     background-color:#CEEDEF;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     font-family: 'Work Sans', 'sans-serif';
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1{
     font-weight: 40px;
     margin: 0px;
     padding: 10px;
-    font-size: 35px;
+    font-size: 40px;
     background-color: lightgreen;
 }
 
 .container{
-    position: relative;
-    height: 200px;
-    margin-top: 50px;
+    margin: 30px 10px 30px 250px;
+    height: 500px;
+    padding-top: 10px;
+    width: 75%;
+    font-family: 'Work Sans', 'sans-serif';
+    background-color:#e6e6e6;
  }
- 
+
 .question{
     font-size: 40px;
     margin-bottom: 10px;
+    font-family: 'Work Sans', 'sans-serif';
+    text-align: center;
 }
 
 .answers{
-    margin-bottom: 20px;
+    margin-bottom: 20px 40px;
     text-align: left;
     display: inline-block;
+    font-family: 'Work Sans', 'sans-serif';
 }
 
 .answers label{
-    margin-bottom: 10px;
+    margin: 20px;
     display: block;
 }
 
@@ -48,15 +53,18 @@ button{
     cursor: pointer;
     margin-bottom: 20px;
     border-color: black;
-    border-radius: 4px;
-    border:0px;
+    border-radius: 5px;
+    border: 5px;
+    
 }
 
 button:hover{
-    background-color: lightcoral;
+    background-color: lightsalmon;
 }
 
 .slide{
+    padding: 150px 50px 0px 50px;
+    width: 150px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -64,9 +72,12 @@ button:hover{
     z-index: 1;
     opacity: 0;
     transition: opacity 0.5s;
+    
 }
 
 .active-slide{
     opacity: 1;
     z-index: 2;
-}
+  }
+
+ 
