@@ -94,16 +94,10 @@
                 const selector2 = `label[id="${questionNo}${currentQuestion.correctAnswer}"]`;
                 var answerElem1 = answerContainer.querySelector(selector2);
 
-                console.log(selector)
-                console.log(selector1)
-                console.log(selector2)
-                console.log(answerElem)
-
+            
                 if(userAnswer === currentQuestion.correctAnswer){
                     numCorrect++;
 
-                    console.log(answerElem)
-                    console.log(answerElem1)
                     //answerContainers[questionNo].style.color = 'lightgreen';
                     answerElem.style.background= "#70F85A";
                     answerElem.style.fontWeight = "800";
