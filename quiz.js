@@ -98,17 +98,17 @@
                 if(userAnswer === currentQuestion.correctAnswer){
                     numCorrect++;
 
-                    //answerContainers[questionNo].style.color = 'lightgreen';
-                    answerElem.style.background= "#70F85A";
-                    answerElem.style.fontWeight = "800";
+                    answerContainers[questionNo].style.color = 'lightgreen';
+                    //answerElem.style.background= "#70F85A";
+                    //answerElem.style.fontWeight = "800";
                 }
 
                 else{
 
-                    answerElem.style.color= "#70F85A";
-                    answerElem.style.background= "#FD2929";
-                    //answerContainers[questionNo].style.color = 'red';
-                    answerElem1.style.fontWeight = "800" ;
+                    //answerElem.style.color= "#70F85A";
+                    //answerElem.style.background= "#FD2929";
+                    answerContainers[questionNo].style.color = 'red';
+                    //answerElem1.style.fontWeight = "800" ;
                 }
 
             });
@@ -169,7 +169,7 @@
             showSlide(currentSlide-1);
         }
 
-        const quizContainer= document.getElementById('quiz');
+        const quizContainer= document.getElementById("quiz");
         const resultscontainer = document.getElementById("results");
         const submitButton= document.getElementById("submit");
 
