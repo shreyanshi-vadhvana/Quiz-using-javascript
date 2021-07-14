@@ -1,7 +1,7 @@
 # Quiz-using-javascript
 
 <ol>
-  <li>It is web-based quiz which is user-friendly, users can navigate according to their requirements. </li>
+  <li>It is web-based quiz, user-friendly project where the users can navigate according to their requirements. </li>
   <li>Technologies used: HTML, CSS, Javascript.</li>
 </ol>
 
