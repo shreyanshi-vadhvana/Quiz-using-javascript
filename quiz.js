@@ -98,7 +98,7 @@
                 if(userAnswer === currentQuestion.correctAnswer){
                     numCorrect++;
 
-                    answerContainers[questionNo].style.color = 'lightgreen';
+                    //answerContainers[questionNo].style.color = 'lightgreen';
                     //answerElem.style.background= "#70F85A";
                     //answerElem.style.fontWeight = "800";
                 }
@@ -107,36 +107,11 @@
 
                     //answerElem.style.color= "#70F85A";
                     //answerElem.style.background= "#FD2929";
-                    answerContainers[questionNo].style.color = 'red';
+                    //answerContainers[questionNo].style.color = 'red';
                     //answerElem1.style.fontWeight = "800" ;
                 }
 
             });
-
-             /*
-
-            Questions.forEach( (currentQuestion, questionNo) => {
-
-                // find selected answer
-                const answerContainer = answerContainers[questionNo];
-                const selector = `input[name=question${questionNo}]:checked`;
-                const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-            
-                // if answer is correct
-                if(userAnswer === currentQuestion.correctAnswer){
-                  // add to the number of correct answers
-                  numCorrect++;
-            
-                  // color the answers green
-                  answerContainers[questionNo].style.color = 'lightgreen';
-                }
-                // if answer is wrong or blank
-                else{
-                  // color the answers red
-                  answerContainers[questionNo].style.color = 'red';
-                }
-              });
-              */
 
             resultscontainer.innerHTML= `${numCorrect} /  ${Questions.length}`;
         }
